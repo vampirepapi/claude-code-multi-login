@@ -40,7 +40,7 @@ MERGE_FOLDERS = {"projects", "todos", "plans", "file-history", "agent-memory"}
 # Never shared (per-account): .credentials.json, .claude.json, remote-settings.json,
 # policy-limits.json, statsig, ide, sessions, session-env, shell-snapshots, logs, backups
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 HOME = Path.home()
 MAIN_DIR = HOME / ".claude"
