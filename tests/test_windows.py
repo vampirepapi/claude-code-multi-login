@@ -30,7 +30,7 @@ class RealWindows(unittest.TestCase):
         cls.root, cls.home = sb.make_home()              # contains ' & ( ) $ on purpose
         cls.fake = sb.fake_claude(cls.root / "bin")
         ca = cls.ca = sb.load_cli(cls.home)
-        cls.real_profiles = ca.powershell_profiles
+        cls.real_profiles = staticmethod(ca.powershell_profiles)   # else self is passed in
         cls.profile = cls.root / "profile" / "Microsoft.PowerShell_profile.ps1"
         ca.powershell_profiles = lambda: [cls.profile]     # never touch your real profile
         ca.check_execution_policy = lambda: None            # never change your real policy
