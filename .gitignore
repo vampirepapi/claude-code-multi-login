@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ruff_cache/
+
+# Editors and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Backups this tool creates if you ever run it inside the repo folder
+*.bak-*
